@@ -18,7 +18,7 @@ class modeloLM(Resource):
         #obter inputs via query string
         wind = float(wind)
         temp = float(temp)
-        month = int(mont)
+        month = int(month)
 
         #prever
         predicao = model.predict([[wind, temp, month]])

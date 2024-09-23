@@ -24,6 +24,6 @@ class modeloLM(Resource):
         predicao = model.predict([[wind, temp, month]])
 
         return jsonify({
-            'predited_Ozone': predicao[0]
+            'predicted_Ozone': predicao[0]
         })
 

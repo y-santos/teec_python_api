@@ -8,4 +8,4 @@ url = 'http://127.0.0.1:5000/modelo/Wind='+str(wind)+'&Temp='+str(temp)+'&Month=
 
 response = requests.get(url)
 
-response.json()
+print(response.json()['predicted_Ozone'])
